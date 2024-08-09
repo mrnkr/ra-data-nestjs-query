@@ -58,7 +58,7 @@
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.7",
     "@types/pluralize": "^0.0.33",
-    "@vitest/coverage-v8": "^1.4.0",
+    "@vitest/coverage-v8": "^2.0.5",
     "cross-env": "^5.2.0",
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^9.1.0",
@@ -73,6 +73,6 @@
     "rimraf": "^6.0.1",
     "typescript": "^5.5.4",
     "unplugin-swc": "^1.4.4",
-    "vitest": "^1.4.0"
+    "vitest": "^2.0.5"
   }
 }
