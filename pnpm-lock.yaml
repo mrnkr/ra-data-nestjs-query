@@ -22,7 +22,7 @@ importers:
         version: 5.1.1(react-dom@18.3.1(react@18.3.1))(react-hook-form@7.52.2(react@18.3.1))(react-router-dom@6.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-router@6.26.0(react@18.3.1))(react@18.3.1)
       ra-data-graphql:
         specifier: ^5.1.0
-        version: 5.3.3(graphql@16.9.0)(ra-core@5.1.1(react-dom@18.3.1(react@18.3.1))(react-hook-form@7.52.2(react@18.3.1))(react-router-dom@6.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-router@6.26.0(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 5.3.4(graphql@16.9.0)(ra-core@5.1.1(react-dom@18.3.1(react@18.3.1))(react-hook-form@7.52.2(react@18.3.1))(react-router-dom@6.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-router@6.26.0(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@apollo/client':
         specifier: ^3.11.3
@@ -2671,8 +2671,8 @@ packages:
       react-router: ^6.22.0
       react-router-dom: ^6.22.0
 
-  ra-data-graphql@5.3.3:
-    resolution: {integrity: sha512-1TOHnZfKUFzB/ZTAvFdU0JKMY2G83Ne0SOkVV9zqfyqCrzX2gZim4mMaXEh+YFloRYfgMoT/sFtRSWddmrbBXg==}
+  ra-data-graphql@5.3.4:
+    resolution: {integrity: sha512-VIKXZCLG3WVfBp5w4VkYhJidg6ddQUkgfRQ0+DYkxz/wVwKaZ8vuXNdkQ6rU1xPrSQXwkAVFRxao41bg6TWMdA==}
     peerDependencies:
       graphql: ^15.6.0 || ^16
       ra-core: ^5.0.0
@@ -6175,7 +6175,7 @@ snapshots:
       react-router: 6.26.0(react@18.3.1)
       react-router-dom: 6.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  ra-data-graphql@5.3.3(graphql@16.9.0)(ra-core@5.1.1(react-dom@18.3.1(react@18.3.1))(react-hook-form@7.52.2(react@18.3.1))(react-router-dom@6.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-router@6.26.0(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  ra-data-graphql@5.3.4(graphql@16.9.0)(ra-core@5.1.1(react-dom@18.3.1(react@18.3.1))(react-hook-form@7.52.2(react@18.3.1))(react-router-dom@6.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-router@6.26.0(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@apollo/client': 3.11.9(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       graphql: 16.9.0
