@@ -55,6 +55,8 @@
   },
   "devDependencies": {
     "@apollo/client": "^3.11.3",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.7",
     "@types/pluralize": "^0.0.33",
@@ -71,6 +73,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rimraf": "^6.0.1",
+    "semantic-release": "^25.0.2",
     "typescript": "^5.5.4",
     "unplugin-swc": "^1.4.4",
     "vitest": "^2.0.5"
