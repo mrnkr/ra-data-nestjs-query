@@ -4,9 +4,6 @@ on:
   release:
     types: [created]
 
-env:
-  NODE_VERSION: 20
-
 jobs:
   publish-npm:
     name: Publish package to npm
@@ -18,14 +15,14 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 8
+          version: 10
           run_install: false
 
-      - name: Install Node.js v${{ env.NODE_VERSION }}
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           registry-url: https://registry.npmjs.org/
-          node-version: ${{ env.NODE_VERSION }}
+          node-version-file: .nvmrc
           cache: pnpm
 
       - name: Install dependencies
