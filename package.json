@@ -7,7 +7,7 @@
   "types": "dist/cjs/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrnkr/ra-data-nestjs-query"
+    "url": "git+https://github.com/mrnkr/ra-data-nestjs-query.git"
   },
   "bugs": {
     "url": "https://github.com/mrnkr/ra-data-nestjs-query/issues"
