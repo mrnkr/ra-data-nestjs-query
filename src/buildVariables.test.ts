@@ -202,6 +202,62 @@ describe(buildVariables.name, () => {
         },
       });
     });
+
+    it('returns correct variables for list of input objects', () => {
+      const params = {
+        data: {
+          name: 'Test club',
+          location: {
+            type: 'Point',
+            coordinates: [-34.6490871, -58.3457883],
+          },
+          extraFieldToIgnore: 'pipipi',
+          points: [
+            {
+              type: 'Point',
+              coordinates: [-34.6490871, -58.3457883],
+              extraFieldToIgnore: 'pipipi',
+            },
+            {
+              type: 'Point',
+              coordinates: [-42.6490871, -57.3457883],
+              extraFieldToIgnore: 'pipipi',
+            },
+          ],
+        },
+      };
+
+      const resource = getResourceByName('Club');
+
+      expect(
+        buildVariables(introspectionResult)(
+          resource,
+          CREATE,
+          params,
+          resource[CREATE],
+        ),
+      ).toEqual({
+        input: {
+          club: {
+            name: 'Test club',
+            location: {
+              type: 'Point',
+              coordinates: [-34.6490871, -58.3457883],
+            },
+            points: [
+              {
+                type: 'Point',
+                coordinates: [-34.6490871, -58.3457883],
+              },
+              {
+                type: 'Point',
+                coordinates: [-42.6490871, -57.3457883],
+              },
+            ],
+          },
+        },
+      });
+    });
   });
 
   describe(UPDATE, () => {

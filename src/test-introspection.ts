@@ -5295,6 +5295,28 @@ export const introspectionResult = {
           },
           defaultValue: null,
         },
+        {
+          __typename: '__InputValue',
+          name: 'points',
+          description: null,
+          type: {
+            __typename: '__Type',
+            kind: 'LIST',
+            name: null,
+            ofType: {
+              __typename: '__Type',
+              kind: 'NON_NULL',
+              name: null,
+              ofType: {
+                __typename: '__Type',
+                kind: 'INPUT_OBJECT',
+                name: 'PointInput',
+                ofType: null,
+              },
+            },
+          },
+          defaultValue: null,
+        },
       ],
       interfaces: null,
       enumValues: null,

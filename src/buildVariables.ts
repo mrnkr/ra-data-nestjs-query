@@ -364,6 +364,21 @@ const buildCleanObjectByQueryType =
           throw Error(`Expected an array at path '${curKey}'`);
         }
 
+        if (type?.kind === TypeKind.INPUT_OBJECT) {
+          const actualType = introspectionResults.types.find(
+            (t) => type.name === t.name && type.kind === t.kind,
+          ) as IntrospectionInputObjectType;
+          return {
+            ...acum,
+            [curKey]: curValue.map((item) =>
+              buildCleanObjectByQueryType(introspectionResults)(
+                item,
+                actualType.inputFields,
+              ),
+            ),
+          };
+        }
+
         return {
           ...acum,
           [curKey]: curValue.map((item) =>
